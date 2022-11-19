@@ -23,8 +23,21 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nrwl/nx/typescript"],
-      "rules": {}
+      "plugins": ["prettier"],
+      "extends": ["plugin:@nrwl/nx/typescript", "prettier"],
+      "parserOptions": { "project": "./tsconfig.*?.json" },
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "semi": false,
+            "tabWidth": 2,
+            "printWidth": 100,
+            "trailingComma": "es5"
+          }
+        ]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],

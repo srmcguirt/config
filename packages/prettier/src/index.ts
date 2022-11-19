@@ -1,3 +1,3 @@
-import prettierConfig = require('./lib/prettier')
+import prettierConfig from './lib/prettier'
 
 export { prettierConfig }

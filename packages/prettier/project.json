@@ -9,9 +9,13 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/prettier",
+        "format": ["cjs"],
         "main": "packages/prettier/src/index.ts",
         "tsConfig": "packages/prettier/tsconfig.lib.json",
-        "assets": ["packages/prettier/*.md"]
+        "assets": ["packages/prettier/*.md"],
+        "thirdParty": true,
+        "dependenciesFieldType": "dependencies",
+        "platform": "node"
       }
     },
     "publish": {
@@ -34,6 +38,12 @@
       "options": {
         "jestConfig": "packages/prettier/jest.config.ts",
         "passWithNoTests": true
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional"
       }
     }
   },
