@@ -1,6 +1,7 @@
 {
   "git.autofetch": true,
-  "editor.fontFamily": "'Victor Mono', 'Dank Mono'",
+  "editor.fontFamily": "'inconsolata'",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "editor.bracketPairColorization.enabled": true,
@@ -10,8 +11,8 @@
     "editorBracketHighlight.foreground3": "#9ba2ff",
     "editorBracketHighlight.unexpectedBracket.foreground": "#f70582"
   },
-  "workbench.colorTheme": "Themer Dark",
-  "prettier.enable": false,
+  "workbench.colorTheme": "Night Owl",
+  "prettier.enable": true,
   "editor.tabSize": 2,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {

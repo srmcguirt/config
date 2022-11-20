@@ -1,8 +1,12 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "@srmcguirt/prettier-config",
   "version": "0.0.1",
   "type": "commonjs",
   "scripts": {
     "build": "npx nx build prettier --with-deps --format=cjs --target=es2015 --no-thirdParty"
+  },
+  "peerDependencies": {
+    "prettier": "^2.7.1"
   }
 }
